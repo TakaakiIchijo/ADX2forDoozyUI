@@ -12,7 +12,7 @@ namespace Doozy.Engine.ADX2
 
         public void UIViewPlayADX2(string cueName)
         {
-            CriAtomDoozyAtomSourceManager.Instance.Play(cueSheetName, cueName);
+            DoozyAtomSourceManager.Instance.Play(cueSheetName, cueName);
         }
     }
 }

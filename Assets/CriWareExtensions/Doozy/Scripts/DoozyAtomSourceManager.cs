@@ -7,21 +7,27 @@ using UnityEngine;
 
 namespace Doozy.Engine.ADX2
 {
-    public class CriAtomDoozyAtomSourceManager : MonoBehaviour
+    public class DoozyAtomSourceManager : MonoBehaviour
     {
-        private static CriAtomDoozyAtomSourceManager s_instance;
+        private static DoozyAtomSourceManager s_instance;
         private static bool s_initialized;
         
         private static List<CriAtomSource> criAtomSources = new List<CriAtomSource>();
 
-        public static CriAtomDoozyAtomSourceManager Instance
+        public static DoozyAtomSourceManager Instance
         {
             get
             {
                 if (s_instance != null) return s_instance;
-                s_instance = FindObjectOfType<CriAtomDoozyAtomSourceManager>();
+                s_instance = FindObjectOfType<DoozyAtomSourceManager>();
 
-                if (s_instance == null) DontDestroyOnLoad(AddToScene(false).gameObject);
+                if (s_instance == null)
+                {
+                    GameObject instance = new GameObject(CriAtomDoozyUtils.Manager_GameObject_Name);
+                    instance.AddComponent<DoozyAtomSourceManager>();
+                    s_instance = instance.GetComponent <DoozyAtomSourceManager>();
+                }
+                
                 return s_instance;
             }
         }
@@ -89,7 +95,7 @@ namespace Doozy.Engine.ADX2
             criAtomSources.ForEach(c => c.volume = 1f); 
         }        
         
-        public static CriAtomDoozyAtomSourceManager AddToScene(bool selectGameObjectAfterCreation = false) { return DoozyUtils.AddToScene<CriAtomDoozyAtomSourceManager>(CriAtomDoozyUtils.Manager_GameObject_Name, true, selectGameObjectAfterCreation); }
+        //public static CriAtomDoozyAtomSourceManager AddToScene(bool selectGameObjectAfterCreation = false) { return DoozyUtils.AddToScene<CriAtomDoozyAtomSourceManager>(CriAtomDoozyUtils.Manager_GameObject_Name, true, selectGameObjectAfterCreation); }
 
         private CriAtomSource GetCreatedAtomSourceFromPool(string cueSheetName)
         {

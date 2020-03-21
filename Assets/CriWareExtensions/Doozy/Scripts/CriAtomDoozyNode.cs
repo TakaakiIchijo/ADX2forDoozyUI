@@ -71,25 +71,25 @@ namespace Doozy.Engine.UI.Nodes
             switch (adx2Action)
             {
                 case Adx2Actions.Play:
-                    if (HasSound) CriAtomDoozyAtomSourceManager.Instance.Play(cueSheetName,cueName);
+                    if (HasSound) DoozyAtomSourceManager.Instance.Play(cueSheetName,cueName);
                     break;
                 case Adx2Actions.Stop:
-                    CriAtomDoozyAtomSourceManager.Instance.StopAllSounds();
+                    DoozyAtomSourceManager.Instance.StopAllSounds();
                     break;
                 case Adx2Actions.Pause:
-                    CriAtomDoozyAtomSourceManager.Instance.PauseAllSounds();
+                    DoozyAtomSourceManager.Instance.PauseAllSounds();
                     break;
                 case Adx2Actions.Unpause:
-                    CriAtomDoozyAtomSourceManager.Instance.UnpauseAllSounds();
+                    DoozyAtomSourceManager.Instance.UnpauseAllSounds();
                     break;
                 case Adx2Actions.Mute:
-                    CriAtomDoozyAtomSourceManager.Instance.MuteAllSounds();
+                    DoozyAtomSourceManager.Instance.MuteAllSounds();
                     break;
                 case Adx2Actions.Unmute:
-                    CriAtomDoozyAtomSourceManager.Instance.UnmuteAllSounds();
+                    DoozyAtomSourceManager.Instance.UnmuteAllSounds();
                     break;
                 case Adx2Actions.LoadCueSheet:
-                    CriAtomDoozyAtomSourceManager.Instance.LoadCueSheet(cueSheetName, acbFilePath, awbFilePath, CueSheetLoaded);
+                    DoozyAtomSourceManager.Instance.LoadCueSheet(cueSheetName, acbFilePath, awbFilePath, CueSheetLoaded);
                     break;
                 default: throw new ArgumentOutOfRangeException();
             }
