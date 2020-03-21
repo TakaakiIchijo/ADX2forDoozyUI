@@ -58,22 +58,25 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-# Store Assets
-/Assets/Demigiant*
-/Assets/Resources/DOTweenSettings.asset*
-/Assets/Doozy*
-/Assets/DoozyInstaller*
-/Gizmos/Doozy*
+[Aa]ssets/Scenes*
 
-/Editor/CriWare*
-/Gizmos//CriWare*
-/Plugins/cri_ware_unity.bundle.bininfo.json*
-/Plugins/Android/libs*
-/Plugins/cri_ware_unity.bundle*
-/Plugins/CriWare
-/Plugins/iOS/libcri_ware_unity.a*
-/Plugins/iOS/libcri_ware_unity.a.bininfo.json*
-/Plugins/x86/cri_ware_unity.dll*
-/Plugins/x86/cri_ware_unity.dll.bininfo.json*
-/Plugins/x86_64/cri_ware_unity.dll*
-/Plugins/x86_64/cri_ware_unity.dll.bininfo.json*
+# Store Assets
+[Aa]ssets/Demigiant*
+[Aa]ssets/Resources/DOTweenSettings.asset*
+
+[Aa]ssets/Doozy*
+[Aa]ssets/DoozyInstaller*
+[Aa]ssets/Gizmos/Doozy*
+
+[Aa]ssets/Editor/CriWare*
+[Aa]ssets/Gizmos/CriWare*
+[Aa]ssets/Plugins/cri_ware_unity.bundle.bininfo.json*
+[Aa]ssets/Plugins/Android/libs*
+[Aa]ssets/Plugins/cri_ware_unity.bundle*
+[Aa]ssets/Plugins/CriWare*
+[Aa]ssets/Plugins/iOS/libcri_ware_unity.a*
+[Aa]ssets/Plugins/iOS/libcri_ware_unity.a.bininfo.json*
+[Aa]ssets/Plugins/x86/cri_ware_unity.dll*
+[Aa]ssets/Plugins/x86/cri_ware_unity.dll.bininfo.json*
+[Aa]ssets/Plugins/x86_64/cri_ware_unity.dll*
+[Aa]ssets/Plugins/x86_64/cri_ware_unity.dll.bininfo.json*
