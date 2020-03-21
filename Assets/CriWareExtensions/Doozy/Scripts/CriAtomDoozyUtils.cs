@@ -3,7 +3,7 @@ namespace Doozy.Engine.Utils
 {
     public static class CriAtomDoozyUtils
     {
-        public static string Manager_GameObject_Name = "AtomSourceManager for Doozy UI";
+        public static string Manager_GameObject_Name = "DoozyAtomSourceManager";
         public const string URL_ADX2_YOUTUBE_CHANNEL = "https://www.youtube.com/channel/UCcdSbneJAaMCS-aokMaF9iA";
         public const string URL_ADX2_MANUAL = "https://game.criware.jp/manual/unity_plugin/jpn/contents/index.html";
 
