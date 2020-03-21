@@ -1,0 +1,2 @@
+# ADX2forDoozyUI
+Doozy UIのノードエディタからADX2の各機能を使うための拡張
