@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Doozy/Examples/_Scenes/E2 - Simple App - Portrait - 2D.unity
+    guid: c60c3e892438621498da548796bb44fc
   m_configObjects: {}

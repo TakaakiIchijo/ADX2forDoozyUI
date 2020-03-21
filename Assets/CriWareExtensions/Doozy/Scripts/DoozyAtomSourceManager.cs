@@ -45,7 +45,7 @@ namespace Doozy.Engine.ADX2
             //SoundyController.MuteAll();
             //Doozy経由のものだけミュート//
         }
-        
+
         public CriAtomSource Play(string cueSheetName, string cueName, Vector3 position = new Vector3())
         {
             if (!s_initialized) s_instance = Instance;
