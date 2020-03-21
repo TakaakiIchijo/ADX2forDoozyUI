@@ -58,3 +58,22 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Store Assets
+/Assets/Demigiant*
+/Assets/Resources/DOTweenSettings.asset*
+/Assets/Doozy*
+/Assets/DoozyInstaller*
+/Gizmos/Doozy*
+
+/Editor/CriWare*
+/Gizmos//CriWare*
+/Plugins/cri_ware_unity.bundle.bininfo.json*
+/Plugins/Android/libs*
+/Plugins/cri_ware_unity.bundle*
+/Plugins/CriWare
+/Plugins/iOS/libcri_ware_unity.a*
+/Plugins/iOS/libcri_ware_unity.a.bininfo.json*
+/Plugins/x86/cri_ware_unity.dll*
+/Plugins/x86/cri_ware_unity.dll.bininfo.json*
+/Plugins/x86_64/cri_ware_unity.dll*
+/Plugins/x86_64/cri_ware_unity.dll.bininfo.json*
