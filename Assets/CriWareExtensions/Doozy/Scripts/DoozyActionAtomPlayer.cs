@@ -1,7 +1,5 @@
-﻿using System;
-using Doozy.Engine.UI;
+﻿using Doozy.Engine.UI;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Doozy.Engine.ADX2
 {

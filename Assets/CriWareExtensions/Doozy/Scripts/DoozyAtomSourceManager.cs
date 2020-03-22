@@ -34,18 +34,6 @@ namespace Doozy.Engine.ADX2
         
         private void Awake() { s_initialized = true; }
         
-        public static void MuteAll()
-        {
-            //SoundyController.MuteAll();
-            //Doozy経由のものだけミュート//
-        }
-        
-        public static void PauseAll()
-        {
-            //SoundyController.MuteAll();
-            //Doozy経由のものだけミュート//
-        }
-
         public CriAtomSource Play(string cueSheetName, string cueName, Vector3 position = new Vector3())
         {
             if (!s_initialized) s_instance = Instance;
@@ -95,8 +83,6 @@ namespace Doozy.Engine.ADX2
             criAtomSources.ForEach(c => c.volume = 1f); 
         }        
         
-        //public static CriAtomDoozyAtomSourceManager AddToScene(bool selectGameObjectAfterCreation = false) { return DoozyUtils.AddToScene<CriAtomDoozyAtomSourceManager>(CriAtomDoozyUtils.Manager_GameObject_Name, true, selectGameObjectAfterCreation); }
-
         private CriAtomSource GetCreatedAtomSourceFromPool(string cueSheetName)
         {
             CriAtomSource atomSource = criAtomSources.FirstOrDefault(a => a.cueSheet == cueSheetName);
